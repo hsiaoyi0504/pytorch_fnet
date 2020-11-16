@@ -18,13 +18,15 @@ image_save_dir = "{}/images/".format(os.getcwd())
 model_save_dir = "{}/model/".format(os.getcwd())
 
 data_save_path_test = "{}/image_list_test.csv".format(os.getcwd())
+path_save_dir = "{}/predictions/".format(os.getcwd())
 
 command_str = (
     "python ../fnet/cli/predict.py "
     "--path_model_dir {} "
     "--dataset fnet.data.MultiChTiffDataset "
     '--dataset_kwargs \'{{"path_csv": "{}"}}\' '
-    "--gpu_ids {}".format(model_save_dir, data_save_path_test, gpu_id)
+    "--path_save_dir {} "
+    "--gpu_ids {}".format(model_save_dir, data_save_path_test, path_save_dir, gpu_id)
 )
 
 print(command_str)
