@@ -1,0 +1,762 @@
+INFO:fnet.cli.train_model: Started training at: 2020-12-04 14:21:41.198998
+INFO:fnet.cli.train_model: *** Training options ***
+INFO:fnet.cli.train_model: {'batch_size': 28,
+INFO:fnet.cli.train_model:  'bpds_kwargs': {'buffer_size': 16,
+INFO:fnet.cli.train_model:                  'buffer_switch_interval': 2800,
+INFO:fnet.cli.train_model:                  'patch_shape': [32, 64, 64]},
+INFO:fnet.cli.train_model:  'dataset_train': 'fnet.data.TiffDataset',
+INFO:fnet.cli.train_model:  'dataset_train_kwargs': {'path_csv': '/home/yihsiao/pytorch_fnet/PECCU/image_list_train.csv'},
+INFO:fnet.cli.train_model:  'dataset_val': 'fnet.data.TiffDataset',
+INFO:fnet.cli.train_model:  'dataset_val_kwargs': {'path_csv': '/home/yihsiao/pytorch_fnet/PECCU/image_list_test.csv'},
+INFO:fnet.cli.train_model:  'fnet_model_class': 'fnet.fnet_model.Model',
+INFO:fnet.cli.train_model:  'fnet_model_kwargs': {'betas': [0.9, 0.999],
+INFO:fnet.cli.train_model:                        'criterion_class': 'fnet.losses.WeightedMSE',
+INFO:fnet.cli.train_model:                        'init_weights': False,
+INFO:fnet.cli.train_model:                        'lr': 0.0005,
+INFO:fnet.cli.train_model:                        'nn_class': 'fnet.nn_modules.fnet_nn_3d.Net',
+INFO:fnet.cli.train_model:                        'scheduler': None},
+INFO:fnet.cli.train_model:  'gpu_ids': [0],
+INFO:fnet.cli.train_model:  'interval_checkpoint': 10000,
+INFO:fnet.cli.train_model:  'interval_save': 1000,
+INFO:fnet.cli.train_model:  'iter_checkpoint': [],
+INFO:fnet.cli.train_model:  'json': PosixPath('/home/yihsiao/pytorch_fnet/PECCU/model4/prefs.json'),
+INFO:fnet.cli.train_model:  'n_iter': 50000,
+INFO:fnet.cli.train_model:  'path_json': PosixPath('/home/yihsiao/pytorch_fnet/PECCU/model4/prefs.json'),
+INFO:fnet.cli.train_model:  'path_save_dir': '/home/yihsiao/pytorch_fnet/PECCU/model4',
+INFO:fnet.cli.train_model:  'seed': None}
+INFO:fnet.models: Initializing new model!
+INFO:fnet.cli.train_model: *** Model ***
+fnet.nn_modules.fnet_nn_3d.Net(**{})
+iter: 0
+gpu: [0]
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 1867.4 s
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 3189.4 s
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 4505.6 s
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 5821.9 s
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 7140.6 s
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 8455.0 s
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 9771.4 s
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 11088.2 s
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 12404.3 s
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 13719.8 s
+INFO:fnet.fnet_model: Created: /home/yihsiao/pytorch_fnet/PECCU/model4/checkpoints
+INFO:fnet.cli.train_model: Saved model checkpoint: /home/yihsiao/pytorch_fnet/PECCU/model4/checkpoints/model_010000.p
+INFO:fnet.utils.viz_utils: Saved: /home/yihsiao/pytorch_fnet/PECCU/model4/loss_curves.png
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 15039.9 s
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 16355.4 s
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 17671.0 s
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 18989.1 s
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 20306.5 s
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 21621.8 s
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 22938.8 s
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 24254.7 s
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 25570.3 s
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 26888.4 s
+INFO:fnet.cli.train_model: Saved model checkpoint: /home/yihsiao/pytorch_fnet/PECCU/model4/checkpoints/model_020000.p
+INFO:fnet.utils.viz_utils: Saved: /home/yihsiao/pytorch_fnet/PECCU/model4/loss_curves.png
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 28208.3 s
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 29525.1 s
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 30842.0 s
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 32158.6 s
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 33473.7 s
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 34789.5 s
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 36104.9 s
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 37424.2 s
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 38740.1 s
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 40058.5 s
+INFO:fnet.cli.train_model: Saved model checkpoint: /home/yihsiao/pytorch_fnet/PECCU/model4/checkpoints/model_030000.p
+INFO:fnet.utils.viz_utils: Saved: /home/yihsiao/pytorch_fnet/PECCU/model4/loss_curves.png
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 41378.2 s
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 42694.3 s
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 44012.2 s
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 45327.8 s
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19, 6, 4, 11, 7, 16, 20, 10, 5, 0, 18]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 46643.3 s
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19, 6, 4, 11, 7, 16, 20, 10, 5, 0, 18, 15, 3, 6, 14, 15, 19, 1, 4, 12, 10]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 47959.9 s
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19, 6, 4, 11, 7, 16, 20, 10, 5, 0, 18, 15, 3, 6, 14, 15, 19, 1, 4, 12, 10, 16, 2, 22, 17, 7, 20, 0, 11, 8, 18]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 49276.7 s
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19, 6, 4, 11, 7, 16, 20, 10, 5, 0, 18, 15, 3, 6, 14, 15, 19, 1, 4, 12, 10, 16, 2, 22, 17, 7, 20, 0, 11, 8, 18, 5, 21, 13, 9, 3, 16, 6, 17, 22, 1]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 50594.9 s
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19, 6, 4, 11, 7, 16, 20, 10, 5, 0, 18, 15, 3, 6, 14, 15, 19, 1, 4, 12, 10, 16, 2, 22, 17, 7, 20, 0, 11, 8, 18, 5, 21, 13, 9, 3, 16, 6, 17, 22, 1, 5, 2, 7, 21, 3, 4, 19, 18, 20, 15]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 51910.2 s
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19, 6, 4, 11, 7, 16, 20, 10, 5, 0, 18, 15, 3, 6, 14, 15, 19, 1, 4, 12, 10, 16, 2, 22, 17, 7, 20, 0, 11, 8, 18, 5, 21, 13, 9, 3, 16, 6, 17, 22, 1, 5, 2, 7, 21, 3, 4, 19, 18, 20, 15, 12, 0, 10, 9, 11, 14, 13, 8, 5, 1]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 53226.8 s
+INFO:fnet.cli.train_model: Saved model checkpoint: /home/yihsiao/pytorch_fnet/PECCU/model4/checkpoints/model_040000.p
+INFO:fnet.utils.viz_utils: Saved: /home/yihsiao/pytorch_fnet/PECCU/model4/loss_curves.png
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19, 6, 4, 11, 7, 16, 20, 10, 5, 0, 18, 15, 3, 6, 14, 15, 19, 1, 4, 12, 10, 16, 2, 22, 17, 7, 20, 0, 11, 8, 18, 5, 21, 13, 9, 3, 16, 6, 17, 22, 1, 5, 2, 7, 21, 3, 4, 19, 18, 20, 15, 12, 0, 10, 9, 11, 14, 13, 8, 5, 1, 18, 19, 3, 12, 4, 6, 15, 2, 17, 22]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 54547.3 s
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19, 6, 4, 11, 7, 16, 20, 10, 5, 0, 18, 15, 3, 6, 14, 15, 19, 1, 4, 12, 10, 16, 2, 22, 17, 7, 20, 0, 11, 8, 18, 5, 21, 13, 9, 3, 16, 6, 17, 22, 1, 5, 2, 7, 21, 3, 4, 19, 18, 20, 15, 12, 0, 10, 9, 11, 14, 13, 8, 5, 1, 18, 19, 3, 12, 4, 6, 15, 2, 17, 22, 14, 11, 10, 8, 0, 16, 7, 20, 13, 21]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 55864.0 s
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19, 6, 4, 11, 7, 16, 20, 10, 5, 0, 18, 15, 3, 6, 14, 15, 19, 1, 4, 12, 10, 16, 2, 22, 17, 7, 20, 0, 11, 8, 18, 5, 21, 13, 9, 3, 16, 6, 17, 22, 1, 5, 2, 7, 21, 3, 4, 19, 18, 20, 15, 12, 0, 10, 9, 11, 14, 13, 8, 5, 1, 18, 19, 3, 12, 4, 6, 15, 2, 17, 22, 14, 11, 10, 8, 0, 16, 7, 20, 13, 21, 9, 6, 8, 10, 18, 5, 14, 4, 1, 9]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 57181.6 s
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19, 6, 4, 11, 7, 16, 20, 10, 5, 0, 18, 15, 3, 6, 14, 15, 19, 1, 4, 12, 10, 16, 2, 22, 17, 7, 20, 0, 11, 8, 18, 5, 21, 13, 9, 3, 16, 6, 17, 22, 1, 5, 2, 7, 21, 3, 4, 19, 18, 20, 15, 12, 0, 10, 9, 11, 14, 13, 8, 5, 1, 18, 19, 3, 12, 4, 6, 15, 2, 17, 22, 14, 11, 10, 8, 0, 16, 7, 20, 13, 21, 9, 6, 8, 10, 18, 5, 14, 4, 1, 9, 3, 22, 20, 17, 12, 0, 21, 13, 16, 15]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 58499.0 s
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19, 6, 4, 11, 7, 16, 20, 10, 5, 0, 18, 15, 3, 6, 14, 15, 19, 1, 4, 12, 10, 16, 2, 22, 17, 7, 20, 0, 11, 8, 18, 5, 21, 13, 9, 3, 16, 6, 17, 22, 1, 5, 2, 7, 21, 3, 4, 19, 18, 20, 15, 12, 0, 10, 9, 11, 14, 13, 8, 5, 1, 18, 19, 3, 12, 4, 6, 15, 2, 17, 22, 14, 11, 10, 8, 0, 16, 7, 20, 13, 21, 9, 6, 8, 10, 18, 5, 14, 4, 1, 9, 3, 22, 20, 17, 12, 0, 21, 13, 16, 15, 7, 2, 11, 19, 18, 7, 10, 13, 5, 8]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 59817.2 s
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19, 6, 4, 11, 7, 16, 20, 10, 5, 0, 18, 15, 3, 6, 14, 15, 19, 1, 4, 12, 10, 16, 2, 22, 17, 7, 20, 0, 11, 8, 18, 5, 21, 13, 9, 3, 16, 6, 17, 22, 1, 5, 2, 7, 21, 3, 4, 19, 18, 20, 15, 12, 0, 10, 9, 11, 14, 13, 8, 5, 1, 18, 19, 3, 12, 4, 6, 15, 2, 17, 22, 14, 11, 10, 8, 0, 16, 7, 20, 13, 21, 9, 6, 8, 10, 18, 5, 14, 4, 1, 9, 3, 22, 20, 17, 12, 0, 21, 13, 16, 15, 7, 2, 11, 19, 18, 7, 10, 13, 5, 8, 14, 0, 3, 21, 16, 17, 11, 22, 9, 15]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 61135.9 s
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 15 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19, 6, 4, 11, 7, 16, 20, 10, 5, 0, 18, 15, 3, 6, 14, 15, 19, 1, 4, 12, 10, 16, 2, 22, 17, 7, 20, 0, 11, 8, 18, 5, 21, 13, 9, 3, 16, 6, 17, 22, 1, 5, 2, 7, 21, 3, 4, 19, 18, 20, 15, 12, 0, 10, 9, 11, 14, 13, 8, 5, 1, 18, 19, 3, 12, 4, 6, 15, 2, 17, 22, 14, 11, 10, 8, 0, 16, 7, 20, 13, 21, 9, 6, 8, 10, 18, 5, 14, 4, 1, 9, 3, 22, 20, 17, 12, 0, 21, 13, 16, 15, 7, 2, 11, 19, 18, 7, 10, 13, 5, 8, 14, 0, 3, 21, 16, 17, 11, 22, 9, 15, 19, 6, 2, 20, 1, 12, 4, 7, 0, 15]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 62455.0 s
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 20 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 14 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 13 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 16 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 18 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19, 6, 4, 11, 7, 16, 20, 10, 5, 0, 18, 15, 3, 6, 14, 15, 19, 1, 4, 12, 10, 16, 2, 22, 17, 7, 20, 0, 11, 8, 18, 5, 21, 13, 9, 3, 16, 6, 17, 22, 1, 5, 2, 7, 21, 3, 4, 19, 18, 20, 15, 12, 0, 10, 9, 11, 14, 13, 8, 5, 1, 18, 19, 3, 12, 4, 6, 15, 2, 17, 22, 14, 11, 10, 8, 0, 16, 7, 20, 13, 21, 9, 6, 8, 10, 18, 5, 14, 4, 1, 9, 3, 22, 20, 17, 12, 0, 21, 13, 16, 15, 7, 2, 11, 19, 18, 7, 10, 13, 5, 8, 14, 0, 3, 21, 16, 17, 11, 22, 9, 15, 19, 6, 2, 20, 1, 12, 4, 7, 0, 15, 22, 20, 14, 13, 17, 16, 18, 5, 4, 8]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 63771.3 s
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 9 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 6 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 3 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 2 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 1 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 10 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 19 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19, 6, 4, 11, 7, 16, 20, 10, 5, 0, 18, 15, 3, 6, 14, 15, 19, 1, 4, 12, 10, 16, 2, 22, 17, 7, 20, 0, 11, 8, 18, 5, 21, 13, 9, 3, 16, 6, 17, 22, 1, 5, 2, 7, 21, 3, 4, 19, 18, 20, 15, 12, 0, 10, 9, 11, 14, 13, 8, 5, 1, 18, 19, 3, 12, 4, 6, 15, 2, 17, 22, 14, 11, 10, 8, 0, 16, 7, 20, 13, 21, 9, 6, 8, 10, 18, 5, 14, 4, 1, 9, 3, 22, 20, 17, 12, 0, 21, 13, 16, 15, 7, 2, 11, 19, 18, 7, 10, 13, 5, 8, 14, 0, 3, 21, 16, 17, 11, 22, 9, 15, 19, 6, 2, 20, 1, 12, 4, 7, 0, 15, 22, 20, 14, 13, 17, 16, 18, 5, 4, 8, 11, 9, 6, 3, 2, 1, 10, 12, 19, 21]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 65090.4 s
+INFO:fnet.data.bufferedpatchdataset: Added item 12 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 21 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 11 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 7 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 0 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 5 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 22 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 8 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 4 into buffer
+INFO:fnet.data.bufferedpatchdataset: Added item 17 into buffer
+INFO:fnet.cli.train_model: BufferedPatchDataset buffer history: [12, 22, 5, 6, 19, 18, 0, 16, 14, 2, 8, 4, 20, 15, 11, 13, 9, 10, 1, 3, 21, 7, 17, 0, 17, 7, 11, 3, 8, 15, 9, 16, 18, 19, 2, 12, 4, 13, 6, 5, 21, 20, 14, 10, 22, 1, 7, 16, 9, 15, 22, 19, 0, 21, 3, 6, 4, 1, 12, 5, 2, 17, 10, 20, 14, 11, 8, 18, 13, 2, 21, 17, 11, 6, 16, 8, 13, 7, 4, 1, 0, 10, 20, 14, 9, 3, 5, 12, 19, 15, 22, 18, 20, 11, 22, 10, 15, 18, 8, 16, 0, 9, 21, 5, 7, 2, 14, 3, 4, 12, 17, 13, 6, 1, 19, 6, 8, 15, 13, 16, 14, 1, 17, 4, 7, 5, 22, 0, 21, 18, 11, 19, 12, 10, 9, 20, 2, 3, 2, 12, 16, 13, 22, 20, 11, 15, 5, 9, 0, 8, 10, 17, 4, 19, 7, 21, 6, 14, 1, 3, 18, 13, 2, 6, 5, 22, 21, 7, 16, 0, 10, 18, 9, 11, 19, 1, 14, 17, 15, 20, 12, 3, 8, 4, 15, 20, 12, 3, 11, 0, 14, 10, 17, 19, 18, 5, 21, 13, 2, 8, 16, 9, 7, 22, 4, 1, 6, 6, 11, 5, 4, 0, 14, 15, 8, 22, 9, 17, 12, 18, 10, 13, 20, 2, 1, 19, 16, 3, 7, 21, 3, 5, 12, 15, 20, 9, 11, 4, 13, 8, 17, 7, 10, 18, 19, 14, 16, 22, 0, 6, 21, 1, 2, 11, 14, 2, 13, 18, 6, 15, 4, 20, 19, 21, 17, 12, 22, 3, 16, 1, 10, 0, 8, 7, 5, 9, 3, 4, 6, 18, 9, 5, 2, 19, 10, 21, 15, 14, 13, 1, 16, 20, 7, 8, 17, 22, 11, 0, 12, 12, 6, 17, 16, 18, 4, 14, 22, 1, 5, 21, 9, 19, 8, 0, 3, 2, 13, 15, 7, 10, 20, 11, 17, 7, 4, 12, 15, 18, 8, 14, 0, 20, 9, 21, 19, 13, 2, 10, 6, 1, 22, 16, 5, 3, 11, 2, 22, 14, 8, 12, 21, 13, 1, 9, 17, 19, 6, 4, 11, 7, 16, 20, 10, 5, 0, 18, 15, 3, 6, 14, 15, 19, 1, 4, 12, 10, 16, 2, 22, 17, 7, 20, 0, 11, 8, 18, 5, 21, 13, 9, 3, 16, 6, 17, 22, 1, 5, 2, 7, 21, 3, 4, 19, 18, 20, 15, 12, 0, 10, 9, 11, 14, 13, 8, 5, 1, 18, 19, 3, 12, 4, 6, 15, 2, 17, 22, 14, 11, 10, 8, 0, 16, 7, 20, 13, 21, 9, 6, 8, 10, 18, 5, 14, 4, 1, 9, 3, 22, 20, 17, 12, 0, 21, 13, 16, 15, 7, 2, 11, 19, 18, 7, 10, 13, 5, 8, 14, 0, 3, 21, 16, 17, 11, 22, 9, 15, 19, 6, 2, 20, 1, 12, 4, 7, 0, 15, 22, 20, 14, 13, 17, 16, 18, 5, 4, 8, 11, 9, 6, 3, 2, 1, 10, 12, 19, 21, 12, 21, 11, 7, 0, 5, 22, 8, 4, 17]
+INFO:fnet.cli.train_model: Loss log saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/losses.csv
+INFO:fnet.cli.train_model: Model saved to: /home/yihsiao/pytorch_fnet/PECCU/model4/model.p
+INFO:fnet.cli.train_model: Elapsed time: 66406.0 s
+INFO:fnet.cli.train_model: Saved model checkpoint: /home/yihsiao/pytorch_fnet/PECCU/model4/checkpoints/model_050000.p
+INFO:fnet.utils.viz_utils: Saved: /home/yihsiao/pytorch_fnet/PECCU/model4/loss_curves.png
